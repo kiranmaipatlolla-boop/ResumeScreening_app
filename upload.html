@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Resume</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="upload-container">
+
+<h1>AI Resume Screening</h1>
+
+<p>Upload your Resume and Job Description</p>
+
+<form id="uploadForm">
+
+<label><strong>Select Resume</strong></label>
+
+<input
+type="file"
+id="resume"
+accept=".pdf,.doc,.docx"
+required>
+
+<label><strong>Job Description</strong></label>
+
+<textarea
+id="jobDescription"
+rows="8"
+placeholder="Paste Job Description Here..."
+required></textarea>
+
+<button type="submit">
+Analyze Resume
+</button>
+
+</form>
+
+<br>
+
+<div class="progress">
+
+<div class="progress-bar" id="progressBar">
+0%
+</div>
+
+</div>
+
+</div>
+
+<script src="js/upload.js"></script>
+
+</body>
+</html>
