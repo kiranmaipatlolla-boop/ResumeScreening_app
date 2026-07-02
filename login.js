@@ -1,40 +1,35 @@
-document.getElementById("showPassword").addEventListener("change", function () {
+document.getElementById("loginForm").addEventListener("submit", function(e){
 
-    const password = document.getElementById("password");
+    e.preventDefault();
 
-    if (this.checked) {
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
 
-        password.type = "text";
+    if(email === "admin@gmail.com" && password === "admin123"){
 
-    } else {
+        alert("Login Successful!");
 
-        password.type = "password";
+        window.location.href = "dashboard.html";
+
+    }else{
+
+        alert("Invalid Email or Password");
 
     }
 
 });
 
-document.getElementById("loginForm").addEventListener("submit", function (event) {
+document.getElementById("showPassword").addEventListener("change", function(){
 
-    event.preventDefault();
+    let password = document.getElementById("password");
 
-    const email = document.getElementById("email").value;
+    if(this.checked){
 
-    const password = document.getElementById("password").value;
+        password.type = "text";
 
-    const message = document.getElementById("message");
+    }else{
 
-    if(email==="admin@gmail.com" && password==="admin123"){
-
-        alert("Login Successful!");
-
-        window.location.href="dashboard.html";
-
-    }
-
-    else{
-
-        message.innerHTML="Invalid Email or Password";
+        password.type = "password";
 
     }
 
