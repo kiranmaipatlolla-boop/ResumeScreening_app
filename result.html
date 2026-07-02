@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Resume Analysis</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>AI Resume Analysis Report</h1>
+
+    <!-- ATS Score -->
+    <div class="score-card">
+
+        <h2>ATS Score</h2>
+
+        <div class="score-circle">
+            <span id="score">85%</span>
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div class="result-grid">
+
+        <div class="result-box">
+
+            <h2>✅ Matched Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git</li>
+
+            </ul>
+
+        </div>
+
+        <div class="result-box">
+
+            <h2>❌ Missing Skills</h2>
+
+            <ul>
+
+                <li>Node.js</li>
+                <li>Docker</li>
+                <li>AWS</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Suggestions -->
+
+    <div class="suggestions">
+
+        <h2>AI Resume Suggestions</h2>
+
+        <ul>
+
+            <li>Add more technical skills related to the job description.</li>
+
+            <li>Include measurable achievements in previous projects.</li>
+
+            <li>Mention certifications and internships.</li>
+
+            <li>Optimize keywords to improve ATS score.</li>
+
+            <li>Keep the resume within one or two pages.</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Candidate Ranking -->
+
+    <div class="ranking">
+
+        <h2>Candidate Ranking</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Rank</th>
+
+                <th>Candidate</th>
+
+                <th>ATS Score</th>
+
+            </tr>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>You</td>
+
+                <td>85%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>Rahul</td>
+
+                <td>81%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>3</td>
+
+                <td>Priya</td>
+
+                <td>78%</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <br>
+
+    <button onclick="downloadReport()">Download Report</button>
+
+    <button onclick="window.location.href='upload.html'">
+
+        Analyze Another Resume
+
+    </button>
+
+</div>
+
+<script src="js/result.js"></script>
+
+</body>
+</html>
