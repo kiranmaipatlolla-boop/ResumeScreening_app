@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ResumeScreening AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+<div class="login-container">
+
+    <h2>ResumeScreening AI</h2>
+    <p>Login to Continue</p>
+
+    <form id="loginForm">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+        >
+
+        <div class="options">
+
+            <label>
+                <input type="checkbox" id="showPassword">
+                Show Password
+            </label>
+
+        </div>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <a href="#">Forgot Password?</a>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
